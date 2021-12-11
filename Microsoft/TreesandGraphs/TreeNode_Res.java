@@ -3,7 +3,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Stack;
 
-/** Binary Tree Inorder Traversal, Morrise Traversal */
+/** Binary Tree Inorder Traversal, using Stacks */
 /**
  * Definition for a binary tree node.
  * public class TreeNode {

@@ -1,6 +1,6 @@
 class Solution:
     def maxSubArray(self, nums: List[int]) -> int:
-        
+        # kadane's algorithm
         # define an array dp same as the size of nums, fill it with 0
         dp = [0 for i in range(len(nums))]
         # set the first to the first in nums

@@ -26,7 +26,15 @@ class Solution {
         List<Integer> li = new ArrayList<>();
         Stack<TreeNode> stack = new Stack<>();
         TreeNode curr = root;
-
+        while (curr != null || !stack.isEmpty()) {
+            while (curr != null) {
+                stack.push(curr);
+                curr = curr.left;
+            }
+            curr = stack.pop();
+            li.add(curr.val);
+            curr = curr.right;
+        }
 
         return li;
     }

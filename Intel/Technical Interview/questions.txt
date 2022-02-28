@@ -1,0 +1,33 @@
+
+4. Please identify 2 syntax errors that would prevent this code from compiling.
+5. To resolve the issue with _classId, what accessibility level should be use to define the variable and why?
+
+
+class Foo
+{
+    private string _classId = string.Empty;
+    public Foo()
+    {
+        UpdateId();
+    }
+
+    public virtual void UpdateId()
+    {
+        _classId = "This is class Foo";
+    }
+
+    public void UpdateId(string newId) {
+        _classId = newId;
+    }
+
+class Bar : Foo
+{
+    public Bar() : base()
+    {
+    }
+
+    public override void UpdateId()
+    {
+        _classId = "This is class Bar";
+    }
+}

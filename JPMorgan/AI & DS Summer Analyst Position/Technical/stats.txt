@@ -1,0 +1,5 @@
+ You toss an unbiased coin and head appears, find the probability of getting head on tossing it again.
+
+What is a p-value?
+
+What is a binomial distribution?
